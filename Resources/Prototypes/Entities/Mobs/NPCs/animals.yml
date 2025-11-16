@@ -3123,6 +3123,24 @@
         Base: cat2_dead
       Dead:
         Base: cat2_dead
+- type: entity
+  name: pear cat
+  id: MobCatPear
+  parent: MobCat
+  description: A delicious, green feline pet.
+  components:
+  - type: Sprite
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: pearcat
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: pearcat
+      Critical:
+        Base: pearcat_dead
+      Dead:
+        Base: pearcat_dead
 
 - type: entity
   name: syndicat
